@@ -8,7 +8,7 @@ echo 'downloading/executing components..'
 cd /opt
 mkdir cgc
 cd /opt/cgc
-wget https://repo.cybergrandchallenge.com/boxes/Vagrantfile
+wget http://repo.cybergrandchallenge.com/boxes/Vagrantfile
 apt-get update
 apt-get install vagrant
 vagrant up
