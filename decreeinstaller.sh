@@ -9,7 +9,6 @@ cd /opt
 mkdir cgc
 cd /opt/cgc
 wget http://repo.cybergrandchallenge.com/boxes/Vagrantfile
-apt-get update
 }
 ftwo_(){
 echo 'executing vagrant environment..goodluck..'
