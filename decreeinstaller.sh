@@ -12,7 +12,7 @@ wget http://repo.cybergrandchallenge.com/boxes/Vagrantfile
 }
 ftwo_(){
 echo 'executing vagrant environment..goodluck..'
-cd /opt/cgc/
+cd /opt/cgc
 vagrant up
 vagrant ssh
 }
