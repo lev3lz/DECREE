@@ -10,9 +10,6 @@ mkdir cgc
 cd /opt/cgc
 wget http://repo.cybergrandchallenge.com/boxes/Vagrantfile
 apt-get update
-echo 'NOW DOWNLOAD APPROPRIATE VAGRANT RELEASE AND INSTALL MANUALLY from'
-echo 'http://www.vagrantup.com/downloads.html'
-wait 10
 }
 ftwo_(){
 echo 'executing vagrant environment..goodluck..'
