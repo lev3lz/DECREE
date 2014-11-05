@@ -8,13 +8,16 @@ echo 'downloading/executing components..'
 cd /opt
 mkdir cgc
 cd /opt/cgc
-wget git clone https://repo.cybergrandchallenge.com/boxes/Vagrantfile
+wget https://repo.cybergrandchallenge.com/boxes/Vagrantfile
+apt-get update
+apt-get install vagrant
 vagrant up
 }
 ftwo_(){
 echo 'executing vagrant environment..goodluck..'
 cd /opt/cgc/
 vagrant up
+vagrant ssh
 }
 fthree_(){
 cd /opt/cgc
