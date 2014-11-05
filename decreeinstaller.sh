@@ -10,8 +10,9 @@ mkdir cgc
 cd /opt/cgc
 wget http://repo.cybergrandchallenge.com/boxes/Vagrantfile
 apt-get update
-apt-get install vagrant
-vagrant up
+echo 'NOW DOWNLOAD APPROPRIATE VAGRANT RELEASE AND INSTALL MANUALLY from'
+echo 'http://www.vagrantup.com/downloads.html'
+wait 10
 }
 ftwo_(){
 echo 'executing vagrant environment..goodluck..'
@@ -144,6 +145,8 @@ echo '''
 ██████╔╝███████╗╚██████╗██║  ██║███████╗███████╗
 ╚═════╝ ╚══════╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝
 easy installation by lev3lz
+must install vagrant release version MANUALLY for DECREE to launch
+http://www.vagrantup.com/downloads.html
 '''
 echo ''
 echo ''
