@@ -18,25 +18,13 @@ vagrant up
 vagrant ssh
 }
 fthree_(){
-cd /opt/cgc
-mkdir cgc_files
-git clone https://github.com/CyberGrandChallenge/strace.git
-git clone https://github.com/CyberGrandChallenge/service-launcher.git
-git clone https://github.com/CyberGrandChallenge/samples.git
-git clone https://github.com/CyberGrandChallenge/readcgcef.git
-git clone https://github.com/CyberGrandChallenge/poll-generator.git
-git clone https://github.com/CyberGrandChallenge/magic-cgc.git
-git clone https://github.com/CyberGrandChallenge/linux-source-3.13.2-cgc.git
-git clone https://github.com/CyberGrandChallenge/libcgcef.git
-git clone https://github.com/CyberGrandChallenge/libcgcdwarf.git
-git clone https://github.com/CyberGrandChallenge/libcgc.git
-git clone https://github.com/CyberGrandChallenge/gdb.git
-git clone https://github.com/CyberGrandChallenge/clang-cgc.git
-git clone https://github.com/CyberGrandChallenge/cgcef-verify.git
-git clone https://github.com/CyberGrandChallenge/cgc2elf.git
-git clone https://github.com/CyberGrandChallenge/cgc-release-documentation.git
-git clone https://github.com/CyberGrandChallenge/cb-testing.git
-git clone https://github.com/CyberGrandChallenge/binutils.git
+if which xdg-open > /dev/null
+then
+  xdg-open 'http://www.vagrantup.com/downloads.html'
+elif which gnome-open > /dev/null
+then
+  gnome-open 'http://www.vagrantup.com/downloads.html'
+fi
 }
 fdoxone_(){
 if which xdg-open > /dev/null
@@ -150,7 +138,7 @@ echo ''
 read -p '''
 [*] 1 - Install DECREE OS
 [*] 2 - Launch DECREE OS
-[*] 3 - Download DECREE github repos
+[*] 3 - Download VagrantVM Release
 [*] 4 - DECREE OS DOCUMENTATION
 [>] Enter Menu Selection: ''' MENU
 if [ $MENU = 0 ]
